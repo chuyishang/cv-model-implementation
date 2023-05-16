@@ -1,0 +1,18 @@
+BASE: ['resnet18_base.yaml']
+DATA:
+  BATCH_SIZE: 64
+  DATASET: "medium_imagenet"
+  IMG_SIZE: 32
+  NUM_WORKERS: 32
+  PIN_MEMORY: True
+MODEL:
+  NUM_CLASSES: 200
+TRAIN:
+  EPOCHS: 30
+  WARMUP_EPOCHS: 2
+  LR: 6e-4
+  MIN_LR: 6e-5
+  WARMUP_LR: 3e-5
+OUTPUT: "output/resnet18_medium_imagenet"
+SAVE_FREQ: 1
+PRINT_FREQ: 500

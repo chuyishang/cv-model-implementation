@@ -1,0 +1,6 @@
+results
+checkpoints
+*pycache*
+output
+wandb
+resnet18_cifar.csv
